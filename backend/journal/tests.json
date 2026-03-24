@@ -1,0 +1,12 @@
+{
+  "tests": [
+    {
+      "name": "Get students unauthorized",
+      "method": "GET",
+      "path": "/?action=get_students&class=9А",
+      "expectedStatus": 401,
+      "expectedBody": {"error": "string"},
+      "bodyMatcher": "partial"
+    }
+  ]
+}
